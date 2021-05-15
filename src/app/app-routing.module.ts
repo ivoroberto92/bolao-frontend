@@ -6,6 +6,7 @@ import { PlayerCrudComponent } from './views/player-crud/player-crud.component';
 import { GuessComponent } from './views/guess/guess.component';
 import { MatchComponent } from './views/match/match.component';
 import { PlayerCreateComponent } from './components/player/player-create/player-create.component';
+import { GuessCreateComponent } from './components/guess/guess-create/guess-create.component';
 
 const routes: Routes = [{
   path: "",
@@ -19,6 +20,9 @@ const routes: Routes = [{
 }, {
   path: "guesses",
   component: GuessComponent
+}, {
+  path: "guesses/create",
+  component: GuessCreateComponent
 }, {
   path: "matches",
   component: MatchComponent

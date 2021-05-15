@@ -1,0 +1,15 @@
+
+<mat-card-title class="title">JOGADORES</mat-card-title>
+
+
+<mat-card *ngFor="let player of players" class="cards"> 
+    <mat-card-title>
+        {{ player.name }}
+    </mat-card-title>
+    <mat-card-content>
+        {{ player.teamName }}
+    </mat-card-content>
+    <mat-card-content>
+        {{ player.score}} pontos
+    </mat-card-content>
+</mat-card>

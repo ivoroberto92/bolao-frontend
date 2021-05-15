@@ -1,0 +1,9 @@
+button {
+    margin-top: 30px;
+}
+.button_new_player{
+    display: flex;
+    float: right;
+    margin-top: 15%;
+    margin-right: 15px;
+}

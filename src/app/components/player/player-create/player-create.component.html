@@ -4,20 +4,22 @@
     </mat-card-title>
     <form action="">
         <mat-form-field>
-            <input matInput placeholder="Nome">
+            <input matInput placeholder="Nome" [(ngModel)]="player.name" name="name">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Pontos">
+            <input matInput placeholder="Pontos" [(ngModel)]="player.score" name="score">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Time do Coração">
+            <input matInput placeholder="Time do Coração" [(ngModel)]="player.teamName" name="teamName">
         </mat-form-field>
     </form>
+    <button mat-raised-button (click)="cancel()"> 
+        Cancelar
+    </button>
+    <button mat-raised-button (click)="createPlayer()" color="primary"> 
+        Salvar
+    </button>
+ 
 </mat-card>
 
-<button mat-raised-button (click)="createPlayer()" color="primary"> 
-    Salvar
-</button>
-<button mat-raised-button (click)="cancel()"> 
-    Cancelar
-</button>
+

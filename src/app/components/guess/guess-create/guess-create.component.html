@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-title>
+        Novo Jogador
+    </mat-card-title>
+    <form action="">
+        <mat-form-field>
+            <input matInput placeholder="Nome do Jogador" [(ngModel)]="guess.playerName" name="playerName">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Time da Casa" [(ngModel)]="guess.homeTeam" name="homeTeam">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Time Visitante" [(ngModel)]="guess.awayTeam" name="awayTeam">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Gols do time da casa" [(ngModel)]="guess.goalsHomeTeam" name="goalsHomeTeam">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Gols do time visitante" [(ngModel)]="guess.goalsAwayTeam" name="goalsAwayTeam">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="cancel()"> 
+        Cancelar
+    </button>
+    <button mat-raised-button (click)="createGuess()" color="primary"> 
+        Salvar
+    </button>
+ 
+</mat-card>
+
+

@@ -22,7 +22,9 @@ import { HomeComponent } from './views/home/home.component';
 import { HttpClientModule } from '@angular/common/http'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { PlayerReadComponent } from './components/player/player-read/player-read.component';
+import { GuessCreateComponent } from './components/guess/guess-create/guess-create.component'
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { FormsModule } from '@angular/forms'
     PlayerCrudComponent,
     GuessComponent,
     MatchComponent,
-    PlayerCreateComponent
+    PlayerCreateComponent,
+    PlayerReadComponent,
+    GuessCreateComponent
   ],
   imports: [
     BrowserModule,
