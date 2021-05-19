@@ -10,6 +10,14 @@
         {{ player.teamName }}
     </mat-card-content>
     <mat-card-content>
-        {{ player.score}} pontos
+        {{ player.score }} pontos
+        <mat-card-content class='status ok' *ngIf='player.status === "OK"'>
+            {{ player.status }}
+        </mat-card-content>
+        <mat-card-content class='status pending' *ngIf='player.status === "PENDENTE"'>
+            {{ player.status }}
+        </mat-card-content>
+     <!--    <span class='status ok' *ngIf='player.status === "OK"'> {{ player.status }} </span>
+        <span class='status' color='warn' *ngIf='player.status === "PENDENTE"'> {{ player.status }} </span> -->
     </mat-card-content>
 </mat-card>

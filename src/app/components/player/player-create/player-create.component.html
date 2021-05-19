@@ -12,8 +12,11 @@
         <mat-form-field>
             <input matInput placeholder="Time do Coração" [(ngModel)]="player.teamName" name="teamName">
         </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Status" [(ngModel)]="player.status" name="status">
+        </mat-form-field>
     </form>
-    <button mat-raised-button (click)="cancel()"> 
+    <button mat-raised-button (click)="cancel()" color='warn'> 
         Cancelar
     </button>
     <button mat-raised-button (click)="createPlayer()" color="primary"> 

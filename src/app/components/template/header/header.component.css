@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     height: 120px;
-    background-color: rgb(230, 230, 250);
+    background-color: #e6e6fa;
 }
 
 .header a {

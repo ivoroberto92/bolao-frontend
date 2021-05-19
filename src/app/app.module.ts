@@ -24,7 +24,9 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { FormsModule } from '@angular/forms';
 import { PlayerReadComponent } from './components/player/player-read/player-read.component';
-import { GuessCreateComponent } from './components/guess/guess-create/guess-create.component'
+import { GuessCreateComponent } from './components/guess/guess-create/guess-create.component';
+import { MatchCreateComponent } from './components/match/match-create/match-create.component'
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { GuessCreateComponent } from './components/guess/guess-create/guess-crea
     MatchComponent,
     PlayerCreateComponent,
     PlayerReadComponent,
-    GuessCreateComponent
+    GuessCreateComponent,
+    MatchCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { GuessCreateComponent } from './components/guess/guess-create/guess-crea
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

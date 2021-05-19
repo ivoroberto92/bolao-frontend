@@ -1,0 +1,9 @@
+.checkboxGoals {
+    width: 30px;
+    margin: 5px 5px 0 5px;
+    text-align: center;
+}
+
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+    display: none;
+  }

@@ -1,21 +1,68 @@
 .sidenav {
-    background-color: #3F51B5;
-    width: 200px;
+  background-color: #e6e6fa;
+  width: 200px;
 }
 
 .sidenav i {
-    padding-right: 10px;;
+  padding-right: 10px;
+  ;
 }
 
 .content {
-    padding: 16px;
-    background-color: #FFFFFF;
-    color: #000000
+  padding: 16px;
+  background-color: #FFFFFF;
+  color: #000000;
+
+}
+
+.navbar {
+  background-color: #e6e6fa;
+  display: flex;
+  align-items: center;
+  height: 120px;
 }
 
 .nav-list a {
-    color: #FFFFFF;
+  color: #0808bd;
 }
+
 .nav-list a i {
-    color: #000000;
+  color: #0808bd;
+}
+
+.companyName {
+  font-size: 150%;
+}
+
+div {
+  overflow: inherit;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: normal;
+}
+
+button {
+  font-size: 110%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+  font-size: 200%;
+  margin: 0 25px ;
+
+}
+
+.logo {
+  height: 150px;
 }

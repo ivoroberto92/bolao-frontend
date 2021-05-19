@@ -5,4 +5,5 @@ export interface Player {
     name: string
     score: number
     teamName: string
+    status: string
 }

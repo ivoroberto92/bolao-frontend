@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title>
+        Nova Partida
+    </mat-card-title>
+    <form action="">
+        <mat-form-field>
+            <input matInput placeholder="Time da Casa" [(ngModel)]="match.homeTeam" name="homeTeam">
+        </mat-form-field>
+        <mat-form-field class="checkboxGoals">
+            <input style='text-decoration:inherit !important' class='checkboxGoals' matInput type="number" [(ngModel)]="match.goalsHomeTeam" name="goalsHomeTeam">
+        </mat-form-field>
+        X
+        <mat-form-field class="checkboxGoals">
+            <input class='checkboxGoals' matInput type="number" [(ngModel)]="match.goalsAwayTeam" name="goalsAwayTeam">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Time Visitante" [(ngModel)]="match.awayTeam" name="awayTeam">
+        </mat-form-field>
+      <!--   <mat-form-field appearance="none">
+            <mat-label>"None" form field</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field> -->
+    </form>
+    <button mat-raised-button (click)="cancel()" color='warn'> 
+        Cancelar
+    </button>
+    <button mat-raised-button (click)="createMatch()" color="primary"> 
+        Salvar
+    </button>
+ 
+</mat-card>

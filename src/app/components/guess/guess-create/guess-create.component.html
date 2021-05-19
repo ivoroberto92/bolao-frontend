@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-title>
-        Novo Jogador
+        Novo Palpite
     </mat-card-title>
     <form action="">
         <mat-form-field>
@@ -19,7 +19,7 @@
             <input matInput placeholder="Gols do time visitante" [(ngModel)]="guess.goalsAwayTeam" name="goalsAwayTeam">
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="cancel()"> 
+    <button mat-raised-button (click)="cancel()" color='warn'> 
         Cancelar
     </button>
     <button mat-raised-button (click)="createGuess()" color="primary"> 

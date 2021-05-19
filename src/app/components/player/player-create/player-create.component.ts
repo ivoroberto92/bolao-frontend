@@ -13,7 +13,8 @@ export class PlayerCreateComponent implements OnInit {
   player: Player = {
     name: '',
     score: 0,
-    teamName: ''
+    teamName: '',
+    status: ''
   }
   constructor(private playerService: PlayerService, private router: Router) { }
 

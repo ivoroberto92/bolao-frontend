@@ -26,7 +26,7 @@ export class GuessCreateComponent implements OnInit {
 
   createGuess(): void {
     this.guessService.create(this.guess).subscribe(() => {
-    this.guessService.showMessage('Partida criada com sucesso!')
+    this.guessService.showMessage('Palpite criado com sucesso!')
     this.router.navigate(['/guesses'])
     })
   }

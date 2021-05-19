@@ -4,6 +4,5 @@ button {
 .button_new_player{
     display: flex;
     float: right;
-    margin-top: 15%;
-    margin-right: 15px;
+    margin-right: 5%;
 }
