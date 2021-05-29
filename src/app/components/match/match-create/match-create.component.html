@@ -1,32 +1,49 @@
-<mat-card>
-    <mat-card-title>
-        Nova Partida
-    </mat-card-title>
-    <form action="">
-        <mat-form-field>
-            <input matInput placeholder="Time da Casa" [(ngModel)]="match.homeTeam" name="homeTeam">
-        </mat-form-field>
-        <mat-form-field class="checkboxGoals">
-            <input style='text-decoration:inherit !important' class='checkboxGoals' matInput type="number" [(ngModel)]="match.goalsHomeTeam" name="goalsHomeTeam">
-        </mat-form-field>
-        X
-        <mat-form-field class="checkboxGoals">
-            <input class='checkboxGoals' matInput type="number" [(ngModel)]="match.goalsAwayTeam" name="goalsAwayTeam">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Time Visitante" [(ngModel)]="match.awayTeam" name="awayTeam">
-        </mat-form-field>
-      <!--   <mat-form-field appearance="none">
-            <mat-label>"None" form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-hint>Hint</mat-hint>
-          </mat-form-field> -->
-    </form>
-    <button mat-raised-button (click)="cancel()" color='warn'> 
-        Cancelar
-    </button>
-    <button mat-raised-button (click)="createMatch()" color="primary"> 
-        Salvar
-    </button>
- 
+<mat-card class="form-match">
+  <mat-card-title>
+    Nova Partida
+  </mat-card-title>
+  <form>
+    <mat-form-field>
+      <mat-label>Time da Casa</mat-label>
+        <mat-select (ngModelChange)="getPathLogoHome($event)"  [(ngModel)]="match.homeTeam" name="selectedHomeTeam">
+          <mat-option  style='text-align: center;'>--</mat-option>
+          <mat-option  *ngFor="let team of teams;" [value]="team.pathLogo">
+            <img src="{{team.pathLogo}}" alt="" style="height: 25px;">
+            {{ team.name }}
+          </mat-option>
+        </mat-select>
+        <div class="team">
+          <img [src]="pathLogoHome" *ngIf='match.homeTeam' alt="" style="height: 125px;">
+        </div>
+      </mat-form-field>
+    <mat-form-field class="">
+      <input class='checkboxGoalsHome' matInput type="number" [(ngModel)]="match.goalsHomeTeam" name="goalsHomeTeam">
+    </mat-form-field>
+    <span class="versus">X</span>
+    <mat-form-field class="">
+      <input class='checkboxGoalsAway awayTeam' matInput type="number" [(ngModel)]="match.goalsAwayTeam"
+        name="goalsAwayTeam">
+    </mat-form-field>
+    <!-- <input matInput placeholder="Time Visitante" [(ngModel)]="match.awayTeam" name="awayTeam">    -->
+    <mat-form-field>
+      <mat-label>Time Visitante</mat-label>
+      <mat-select (ngModelChange)="getPathLogoAway($event)" [(ngModel)]="match.awayTeam" name="selectedAwayTeam">
+        <mat-option style='text-align: center;'>--</mat-option>
+        <mat-option *ngFor="let team of teams" [value]="team.pathLogo">
+          <img src="{{team.pathLogo}}" alt="" style="height: 25px;">
+          {{ team.name }}
+        </mat-option>
+      </mat-select>
+      <div class="team">
+        <img [src]="pathLogoAway" *ngIf='match.awayTeam' alt="" style="height: 125px;">
+      </div>
+    </mat-form-field>
+  </form>
+  <button class="button_match" mat-raised-button (click)="createMatch()" color="primary">
+    Salvar
+  </button>
+  <button class="button_match" mat-raised-button (click)="cancel()" color='warn'>
+    Cancelar
+  </button>
+
 </mat-card>

@@ -1,9 +1,67 @@
-.checkboxGoals {
-    width: 30px;
-    margin: 5px 5px 0 5px;
+.checkboxGoalsHome {
+  position: absolute;
+  right: 60px;
+  top: 70px;
+  font-size: 60px;
+  width: 50px;
+ /* margin: 5px 5px 0 5px;*/
+  text-align: center;
+}
+
+.checkboxGoalsAway {
+  position: absolute;
+  right: 30px;
+  top: 66px;
+  font-size: 60px;
+  width: 50px;
+  text-align: center;
+}
+
+::ng-deep .mat-form-field-underline,
+::ng-deep .mat-form-field-ripple {
+  display: none;
+}
+
+.form-match {
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 0;
+
+}
+
+.button_match {
+  margin: 5px;
+}
+/*Deixar o fundo do input branco*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input {
+    font-size: 25px;
+}
+.awayTeam {
+    margin: 0px 10px;
+}
+
+.mat-form-field {
     text-align: center;
 }
 
-::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
-    display: none;
-  }
+form {
+    margin: 40px 0px 40px 0px;
+}
+
+.team{
+  margin-top: 20px;
+}
+
+.versus{
+  position: absolute;
+  top: 185px;
+  font-size: 30px;
+}

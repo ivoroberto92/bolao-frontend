@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Player } from '../player.model';
 
+
 @Component({
   selector: 'app-player-create',
   templateUrl: './player-create.component.html',
@@ -16,6 +17,7 @@ export class PlayerCreateComponent implements OnInit {
     teamName: '',
     status: ''
   }
+
   constructor(private playerService: PlayerService, private router: Router) { }
 
   ngOnInit(): void {

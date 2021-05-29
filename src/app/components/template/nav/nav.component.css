@@ -36,8 +36,8 @@
 
 div {
   overflow: inherit;
+ /* background-color: #fafafa;*/
 }
-
 a {
   text-decoration: none;
   font-size: 1rem;
@@ -45,7 +45,7 @@ a {
 }
 
 button {
-  font-size: 110%;
+  font-size: 1rem;
   min-width: min-content;
 }
 
@@ -58,11 +58,15 @@ button {
 }
 
 .mat-sidenav-content {
-  font-size: 200%;
+  font-size: 1rem;
   margin: 0 25px ;
 
 }
 
 .logo {
   height: 150px;
+}
+
+.mat-drawer-container {
+  margin: 40px auto;
 }

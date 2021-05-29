@@ -10,6 +10,7 @@ import { Player } from './player.model';
 export class PlayerService {
 
   baseUrl = "http://localhost:8080/players"
+  baseUrlRanking = "http://localhost:8080/players/ranking"
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string): void {
@@ -26,5 +27,8 @@ export class PlayerService {
 
   read(): Observable<Player[]> {
     return this.http.get<Player[]>(this.baseUrl)
+  }
+  getRanking(): Observable<Player[]> {
+    return this.http.get<Player[]>(this.baseUrlRanking)
   }
 }

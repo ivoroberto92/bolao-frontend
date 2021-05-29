@@ -38,77 +38,77 @@
            <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container> -->
-<div style="height: 100vh;"> 
-    <mat-toolbar class='navbar'>
-        <div fxShow="true" fxHide.gt-sm="true">
-          <button mat-icon-button (click)="sidenav.toggle()">
-             <i class="material-icons">menu</i> 
-          </button>
-        </div>
-        <a routerLink="/">
-            <img class="logo" src="assets/images/logo.png" alt="">
-        </a>
-        <span class="example-spacer"></span>
-        <div fxShow="true" fxHide.lt-md="true">
-         <!--  <a mat-button routerLink="/players">Jogadores</a>
+<div style="height: 100vh;">
+  <mat-toolbar class='navbar'>
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <i class="material-icons">menu</i>
+      </button>
+    </div>
+    <a routerLink="/">
+      <img class="logo" src="assets/images/logo.png" alt="">
+    </a>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <!--  <a mat-button routerLink="/players">Jogadores</a>
           <a mat-button routerLink="/prices">Prices</a>
           <a mat-button routerLink="/start-page">Start page</a>
           <a mat-button routerLink="/offer">Offer</a>
           <a mat-button routerLink="/contact">Contact</a> -->
-          <mat-nav-list class="nav-list">
-            <a mat-button routerLink="/">
-                <i class="material-icons">
-                    home
-                </i>
-                Início
-            </a>
-            <a mat-button routerLink="/players"> 
-                <i class="material-icons">
-                    group
-                </i>
-                Jogadores
-            </a>
-            <a mat-button routerLink="/guesses"> 
-                <i class="material-icons">
-                    how_to_vote
-                </i>
-                Palpites
-            </a>
-            <a mat-button routerLink="/matches"> 
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                Partidas
-            </a>
-     <!--    <a mat-button routerLink="/matches"> 
-                <i class="material-icons">
-                    emoji_events
-                </i>
-                Ranking
-            </a>  -->
-        </mat-nav-list>
-        </div>
-      </mat-toolbar>
-      <mat-sidenav-container fxFlexFill class="example-container">
-       <mat-sidenav class="sidenav" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
-          <div fxLayout="column">
-            <a mat-list-item routerLink="/">
-                 <i class="material-icons">
-                home
-            </i>Início</a>
-            <a mat-list-item routerLink="/players"><i class="material-icons">
-                group
-            </i>Jogadores</a>
-            <a mat-list-item routerLink="/guesses"><i class="material-icons">
-                how_to_vote
-            </i>Palpites</a>
-            <a mat-list-item routerLink="/matches"><i class="material-icons">
-                sports_soccer
-            </i>Partidas</a>
-          </div>
-        </mat-sidenav>
-        <mat-sidenav-content fxFlexFill>
-           <router-outlet></router-outlet>
-        </mat-sidenav-content> 
-      </mat-sidenav-container> 
+      <mat-nav-list class="nav-list">
+        <a mat-button routerLink="/">
+          <i class="material-icons">
+            home
+          </i>
+          Início
+        </a>
+        <a mat-button routerLink="/players">
+          <i class="material-icons">
+            group
+          </i>
+          Jogadores
+        </a>
+        <a mat-button routerLink="/guesses">
+          <i class="material-icons">
+            how_to_vote
+          </i>
+          Palpites
+        </a>
+        <a mat-button routerLink="/matches">
+          <i class="material-icons">
+            sports_soccer
+          </i>
+          Partidas
+        </a>
+        <a mat-button routerLink="/ranking">
+          <i class="material-icons">
+            emoji_events
+          </i>
+          Ranking
+        </a> 
+      </mat-nav-list>
     </div>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav class="sidenav" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-list-item routerLink="/">
+          <i class="material-icons">
+            home
+          </i>Início</a>
+        <a mat-list-item routerLink="/players"><i class="material-icons">
+            group
+          </i>Jogadores</a>
+        <a mat-list-item routerLink="/guesses"><i class="material-icons">
+            how_to_vote
+          </i>Palpites</a>
+        <a mat-list-item routerLink="/matches"><i class="material-icons">
+            sports_soccer
+          </i>Partidas</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

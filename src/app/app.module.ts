@@ -27,6 +27,11 @@ import { PlayerReadComponent } from './components/player/player-read/player-read
 import { GuessCreateComponent } from './components/guess/guess-create/guess-create.component';
 import { MatchCreateComponent } from './components/match/match-create/match-create.component'
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatSelectModule} from '@angular/material/select';
+import { PlayerRankingComponent } from './components/player/player-ranking/player-ranking.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -42,7 +47,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PlayerCreateComponent,
     PlayerReadComponent,
     GuessCreateComponent,
-    MatchCreateComponent
+    MatchCreateComponent,
+    PlayerRankingComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +64,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
