@@ -8,4 +8,6 @@ export interface Guess {
     awayTeam: string
     goalsHomeTeam: number
     goalsAwayTeam: number
+    date?: Date
 }
+

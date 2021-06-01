@@ -1,0 +1,26 @@
+<mat-card-title class="title">PALPITES</mat-card-title>
+
+<mat-card *ngFor="let guess of guessesByDate" class="date">
+   {{ guess.date | date:'dd-MM-yyyy'}} 
+
+  <!-- <mat-card  class="cards">
+    <mat-card-title class='player-name'>
+      {{ guess.playerName }}
+    </mat-card-title>
+    <mat-card-content>
+      {{ guess.homeTeam }}
+    </mat-card-content>
+    <mat-card-content class='goalsHomeTeam'>
+      {{ guess.goalsHomeTeam }}
+    </mat-card-content>
+    <mat-card-content class="versus">
+      X
+    </mat-card-content>
+    <mat-card-content class='goalsAwayTeam'>
+      {{ guess.goalsAwayTeam }}
+    </mat-card-content>
+    <mat-card-content>
+      {{ guess.awayTeam }}
+    </mat-card-content>
+</mat-card>  -->
+</mat-card>

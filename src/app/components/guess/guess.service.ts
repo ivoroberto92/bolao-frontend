@@ -10,7 +10,7 @@ import { Guess } from './guess.model';
 export class GuessService {
 
   baseUrl = 'http://localhost:8080/guesses'
-
+  baseUrlGuessGroupByDate = 'http://localhost:8080/guesses/groupByDate'
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {
   }
   showMessage(msg: string): void {
@@ -22,6 +22,9 @@ export class GuessService {
   }
   create(guess: Guess): Observable<Guess> {
     return this.http.post<Guess>(this.baseUrl, guess)
+  }
+  read(){
+    return this.http.get<any>(this.baseUrlGuessGroupByDate)
   }
 
 }

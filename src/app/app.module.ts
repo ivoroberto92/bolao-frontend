@@ -32,6 +32,7 @@ import { PlayerRankingComponent } from './components/player/player-ranking/playe
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { GuessReadComponent } from './components/guess/guess-read/guess-read.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { MatSortModule } from '@angular/material/sort';
     PlayerReadComponent,
     GuessCreateComponent,
     MatchCreateComponent,
-    PlayerRankingComponent
+    PlayerRankingComponent,
+    GuessReadComponent
   ],
   imports: [
     BrowserModule,

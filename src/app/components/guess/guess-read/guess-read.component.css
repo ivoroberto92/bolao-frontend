@@ -1,0 +1,44 @@
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 45px 0px 45px 0px;
+    font-weight: bold;
+}
+
+.cards {
+    display:inline-block; 
+    width: 28.5%; 
+    margin: 5px 12px 5px 12px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.versus {
+    margin: 0 10px;
+}
+
+.pending {
+    color: rgb(250, 20, 20)
+}
+.mat-card-content {
+    display: inherit;
+    margin: 15px 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.player-name{
+    text-align: left;
+}
+
+.goalsAwayTeam{
+    margin-right: 20px;
+}
+.goalsHomeTeam{
+    margin-left: 20px;
+}
+.date{
+/* position: absolute;
+right: 0px;
+bottom: 60px; */
+}
